@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #1f2937;
+  display: flex;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.contenedor {
+  background: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+.contador {
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+#contador-pendientes {
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.formulario {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.formulario input {
+  flex: 1;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.formulario input:focus {
+  border-color: #2563eb;
+}
+
+.formulario button {
+  padding: 0.65rem 1.1rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #1d4ed8;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.tarea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 0.9rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  gap: 0.75rem;
+}
+
+.texto-tarea {
+  flex: 1;
+  word-break: break-word;
+}
+
+/* Clase para alternar desde JavaScript al marcar como completada */
+.tarea.completada .texto-tarea {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.tarea.completada {
+  background-color: #f3f4f6;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.acciones button {
+  border: none;
+  border-radius: 4px;
+  padding: 0.35rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.btn-completar {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.btn-completar:hover {
+  background-color: #bbf7d0;
+}
+
+.btn-eliminar {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-eliminar:hover {
+  background-color: #fecaca;
+}
